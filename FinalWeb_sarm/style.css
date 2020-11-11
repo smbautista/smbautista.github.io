@@ -1,0 +1,277 @@
+/*Home*/
+body {
+  margin: 0;
+}
+
+.banner {
+  width: 100%;
+  margin-top: -50px;
+  position: static;
+  z-index: -5;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 17px;
+  text-align: justify;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.info {
+  margin-top: 0px;
+  font-family: monotype corsiva;
+  font-size: 20px;
+  position: static;
+  margin: center;
+}
+
+.info h1 {
+  float: center;
+  margin-left:100px;
+}
+
+h2 {
+  text-align: left;
+  margin-left:10%;
+}
+
+.banner img {
+  height: 100%;
+  width: 100%;
+}
+
+#navbarbrand:hover{
+  background: transparent;
+}
+
+.img-responsive {
+  margin-top: -20px;
+  width: 70px;
+  height: 70px;
+}
+
+.header {
+  top: 0;
+  width: 100%;
+  background-color:teal	;
+  height: 80px;
+  position: absolute;
+}
+
+.header a {
+  margin-left: 20px;
+  margin-inline-end: 5px;
+  margin-top: 20px;
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 2px;
+}
+
+.header a:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+
+* {
+  box-sizing: border-box
+}
+
+.search {
+width: 250px;
+margin-top: 10px;
+margin-left: 1600px;
+}
+
+.search div{
+  width: 200px;
+ 
+}
+
+.search button{
+  border-radius: 1px;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  margin-top: -56px;
+  float: right;
+
+}
+
+#vid_desc {
+  width: 75%;
+  height: 100%;
+}
+
+
+/*Contact*/
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 10px; 
+  margin-bottom: 16px; 
+  resize: vertical ;
+  height: 50%;
+}
+
+input[type=submit] {
+  font-size: 20px;
+  background-color: #0063B2FF;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20%;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+.container_contact {
+  height: 800px;
+  width: 700px;
+  position: relative;
+  margin-top: 20%;
+  margin-left:1000px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/*About*/
+
+div.gallery {
+  margin: 0px;
+  margin-inline-end: -50px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-left: 150px;
+  margin-top: 80px;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.desc {
+  padding: 30px;
+  text-align: center;
+}
+
+
+/* Ecoutourism*/
+.container {
+  background-color: transparent;
+  position: relative;
+  bottom:500px;
+  width: 50%;
+  margin-top: 600px;
+  margin-left: 5px;
+}
+
+.container img {
+  border-style:outset;
+  border-color: cyan;
+  border-width: 5px;
+  box-shadow: 0px 0px 10px grey;
+  width: 500px;
+  position:absolute;
+  margin-left: 700px;
+  height: 400px;
+}
+
+.container .btn {
+  position: relative;
+  top: 450px;
+  left: 950px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:#00F5FF	;
+  color: black;
+  font-size: 25px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color:grey;
+}
+
+
+
+
+/*footer*/
+.footer {
+  position: relative;
+  text-align: center;
+  padding:3px;
+  width: 100%;
+  background-color:teal;
+  color:white;
+  margin-top: 25%;
+}
+
+.footer p {
+  text-align: center;
+}
