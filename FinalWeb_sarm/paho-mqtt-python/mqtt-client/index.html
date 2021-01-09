@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQTT</title>
+
+    <!-- Added the Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="col-sm-12">
+        <h1 style="border: none;padding-left: 25px;">MQTT on Web Socket</h1>
+        <div class="form-group container">
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header">Broker</div>
+                    <div class="card-body">
+                        <label for="broker">Address:</label><br>
+                        <input type="text" id="address" name="broker" value=''>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary" id="connect">connect</button>
+                        <br>
+                        <br>
+                        <label for="">Status:</label><br>
+                        <input id="status" type="text" readonly value="Press connect">
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                        <div class="card-header">Incoming Messages</div>
+                        <div class="card-body">
+                            <table id="incoming">
+                                <tr>
+                                    <th>Topic</th>
+                                    <th>Payload</th>
+                                    <th>Time Stamp</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+
+    
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header">Publish</div>
+                    <div class="card-body">
+                        <label for="">Topic:</label><br>
+                        <input type="text" id="pubTopic"><br>
+                        <label for="">Payload:</label><br>
+                        <input type="text" id="payloadPub">
+                        <br>
+                        <br>
+                        <button class="btn btn-primary" id="publish">Publish</button>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                        <div class="card-header">Published Messages</div>
+                        <div class="card-body">
+                            <table id="publishTable">
+                                <tr>
+                                    <th>Topic</th>
+                                    <th>Payload</th>
+                                    <th>Time Stamp</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header">Subscribe</div>
+                    <div class="card-body">
+                        <label for="">Topic:</label><br>
+                        <input type="text" id="topicSub">
+                        <br>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary" id="subscribe">subscribe</button>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <br> 
+                <div class="card">
+                        <div class="card-header">Subscribed Messages</div>
+                        <div class="card-body">
+                            <table id="subTable">
+                                <tr>
+                                    <th>Topic</th>
+                                    <th>Time Stamp</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>                
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script src="./browserMqtt.js"></script>
+<script src="./index.js"></script>
+
+</html>
